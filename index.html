@@ -4,80 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 80%;
-            max-width: 800px;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .content {
-            padding: 20px;
-        }
-        .profile-pic {
-            display: block;
-            margin: 0 auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .skills {
-            margin-top: 20px;
-        }
-        .skills h3 {
-            color: #4CAF50;
-            text-align: center;
-        }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        .skills ul li {
-            display: inline-block;
-            background: #e0e0e0;
-            color: #333;
-            margin: 5px;
-            padding: 10px 15px;
-            border-radius: 20px;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -87,8 +14,9 @@
         <div class="content">
             <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
             <h2>John Doe</h2>
-            <p>Hello! I'm John Doe, a programmer skilled in HTML, CSS, and Python. I am passionate about creating user-friendly and innovative digital experiences. I am known for my creativity, problem-solving skills, and fostering effective collaboration in team environments.</p>
-            <div class="skills">
+            <p id="intro">Hello! I'm John Doe, a programmer skilled in HTML, CSS, and Python. I am passionate about creating user-friendly and innovative digital experiences. I am known for my creativity, problem-solving skills, and fostering effective collaboration in team environments.</p>
+            <button id="more-info-btn">More Info</button>
+            <div class="skills" id="skills-section">
                 <h3>Skills</h3>
                 <ul>
                     <li>HTML</li>
@@ -103,5 +31,6 @@
             &copy; 2024 John Doe. All rights reserved.
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
